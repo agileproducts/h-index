@@ -19,7 +19,7 @@ You can set up an ArticleSet object like this
 
 But typically you'd load the article set from a database, csv file or etcetera. The articles don't need to be in any particular order - ruby is good at sorting arrays and hashes!
 
-There's only a couple of interesting methods in this class:
+To find the h-index of the set use:
 
     journal.hindex 
 
