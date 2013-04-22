@@ -28,4 +28,14 @@ describe ArticleSet do
     @journal.hindex(5).should ==expected
   end
   
+  it "should calculate the h-median correctly" do
+    expected = 9
+    @journal.hmedian.should==expected
+  end
+  
+  it "should calculate the h5-median correctly" do
+    expected = 9
+    @journal.hmedian(5).should==expected
+  end
+  
 end

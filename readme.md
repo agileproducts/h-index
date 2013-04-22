@@ -19,7 +19,7 @@ You can set up an ArticleSet object like this
 
 But typically you'd load the article set from a database, csv file or etcetera. The articles don't need to be in any particular order - ruby is good at sorting arrays and hashes!
 
-There's only one interesting method in this class:
+There's only a couple of interesting methods in this class:
 
     journal.hindex 
 
@@ -30,6 +30,11 @@ If you supply an argument like this:
     journal.hindex(5)
 
 Then it returns the h-index for that number of years back - for example you can obtain the h5-index used by [Google Scholar](http://scholar.google.co.uk/intl/en/scholar/metrics.html#metrics). 
+
+The h-median is the median number of citations from the h most cited articles in the set (the h-core). This is obtained by:
+
+    journal.hmedian
+    journal.hmedian(5)
 
 
 Testing
